@@ -3,8 +3,7 @@ import { StyleSheet, View, Text, } from 'react-native'
 import { StatusBar } from 'expo-status-bar'
 import { FlashList } from '@shopify/flash-list'
 import { SafeAreaView, SafeAreaProvider } from 'react-native-safe-area-context'
-import { useContacts, PermissionStatus, type Contact, } from 'react-native-nitro-contacts'
-7
+import { useContacts, PermissionStatus, type Contact } from 'react-native-nitro-contacts'
 import { LoadingView, ErrorView, ContactItem, Button, Header } from './components'
 
 export default function App() {
@@ -18,14 +17,16 @@ export default function App() {
   ), [])
 
   if (isLoading) {
-    <LoadingView />
+    return <LoadingView />
   }
 
   if (error) {
-    <ErrorView
-      onPress={refresh}
-      message={error.message}
-    />
+    return (
+      <ErrorView
+        onPress={refresh}
+        message={error.message}
+      />
+    )
   }
 
   if (status !== PermissionStatus.GRANTED) {
