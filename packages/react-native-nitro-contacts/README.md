@@ -5,21 +5,21 @@ High-performance React Native contacts access using [Nitro Modules](https://gith
 ## Installation
 
 ```bash
-npm install react-native-nitro-contacts
+npm install @enginnblt/react-native-nitro-contacts
 # or
-yarn add react-native-nitro-contacts
+yarn add @enginnblt/react-native-nitro-contacts
 # or
-bun add react-native-nitro-contacts
+bun add @enginnblt/react-native-nitro-contacts
 ```
 
-**Peer dependencies:** `react`, `react-native`, and `react-native-nitro-modules` must be installed.
+**Peer dependencies:** `react`, `react-native`, and [react-native-nitro-modules](https://github.com/mrousavy/nitro) must be installed.
 
 ### Expo (managed workflow)
 
 If you use Expo, install the config plugin (optional peer):
 
 ```bash
-npx expo install react-native-nitro-contacts @expo/config-plugins
+npx expo install @enginnblt/react-native-nitro-contacts @expo/config-plugins
 ```
 
 Then in `app.json` / `app.config.js`:
@@ -27,7 +27,7 @@ Then in `app.json` / `app.config.js`:
 ```json
 {
   "expo": {
-    "plugins": ["react-native-nitro-contacts"]
+    "plugins": ["@enginnblt/react-native-nitro-contacts"]
   }
 }
 ```
@@ -37,7 +37,7 @@ Then in `app.json` / `app.config.js`:
 Use the `useContacts` hook to load contacts, handle permissions, and refresh:
 
 ```tsx
-import { useContacts, PermissionStatus } from 'react-native-nitro-contacts'
+import { useContacts, PermissionStatus } from '@enginnblt/react-native-nitro-contacts'
 
 function ContactList() {
   const {
@@ -96,7 +96,7 @@ Returns:
 - **`PostalAddress`** — `street`, `city`, `state`, `postalCode`, `country`, `isoCountryCode`, `label`.
 - **`PermissionStatus`** — `GRANTED` \| `DENIED` \| `NOT_DETERMINED` \| `LIMITED`.
 
-All of these are exported from `react-native-nitro-contacts`.
+All of these are exported from `@enginnblt/react-native-nitro-contacts`.
 
 ## Requirements
 
@@ -104,6 +104,11 @@ All of these are exported from `react-native-nitro-contacts`.
 - **iOS:** Add `NSContactsUsageDescription` in `Info.plist`.
 - **Android:** `READ_CONTACTS` is requested at runtime; ensure it’s not removed from your manifest.
 
+## Links
+
+- [GitHub](https://github.com/enginbolat/react-native-nitro-contacts)
+- [npm](https://www.npmjs.com/package/@enginnblt/react-native-nitro-contacts)
+
 ## License
 
-MIT · [GitHub](https://github.com/enginbolat/react-native-nitro-contacts)
+MIT
