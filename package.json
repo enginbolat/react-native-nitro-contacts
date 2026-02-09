@@ -1,0 +1,16 @@
+{
+  "name": "nitro-contacts",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "build:lib": "bun run --cwd packages/react-native-nitro-contacts build",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^5"
+  }
+}
