@@ -3,7 +3,7 @@ import { StyleSheet, View, Text, } from 'react-native'
 import { StatusBar } from 'expo-status-bar'
 import { FlashList } from '@shopify/flash-list'
 import { SafeAreaView, SafeAreaProvider } from 'react-native-safe-area-context'
-import { useContacts, PermissionStatus, type Contact } from 'react-native-nitro-contacts'
+import { useContacts, PermissionStatus, type Contact } from '@enginnblt/react-native-nitro-contacts'
 import { LoadingView, ErrorView, ContactItem, Button, Header } from './components'
 
 export default function App() {

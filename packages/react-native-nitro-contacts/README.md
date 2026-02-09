@@ -1,6 +1,6 @@
 # react-native-nitro-contacts
 
-High-performance React Native contacts access using [Nitro Modules](https://github.com/margelo/react-native-nitro-modules) (JSI). Works with both the New Architecture and the legacy bridge. Target: React Native 0.74+.
+High-performance React Native contacts access using [Nitro Modules](https://github.com/mrousavy/nitro) (JSI). Works with both the New Architecture and the legacy bridge. Target: React Native 0.74+.
 
 ## Installation
 

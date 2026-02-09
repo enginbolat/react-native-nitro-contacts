@@ -2080,7 +2080,7 @@ SPEC CHECKSUMS:
   ExpoModulesCore: f3da4f1ab5a8375d0beafab763739dbee8446583
   FBLazyVector: e95a291ad2dadb88e42b06e0c5fb8262de53ec12
   hermes-engine: 9f4dfe93326146a1c99eb535b1cb0b857a3cd172
-  NitroContacts: 17c56b38555c424940ca6cf0cd85f53fd6ca732d
+  NitroContacts: 2605b1d12ccc6bb269f7c1b44dbfef6b7d07aeb1
   NitroModules: a5ca899bb0c1326c937f11de6b050a467c5a12de
   RCTDeprecation: 943572d4be82d480a48f4884f670135ae30bf990
   RCTRequired: 8f3cfc90cc25cf6e420ddb3e7caaaabc57df6043
