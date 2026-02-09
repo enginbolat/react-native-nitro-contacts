@@ -35,6 +35,8 @@ coverage
 .github
 .claude
 CLAUDE.md
+.npmrc
+.claude
 
 # Logs & cache
 logs
