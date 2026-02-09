@@ -1,0 +1,50 @@
+# Dependencies
+node_modules
+
+# Example app (not part of published workspace)
+apps/
+
+# Build output
+out
+dist
+lib
+*.tgz
+*.tsbuildinfo
+
+# Tests & coverage
+coverage
+*.lcov
+**/*.test.*
+**/*.spec.*
+
+# Environment & local config
+.env
+.env.*
+!.env.example
+
+# IDE & editor
+.idea
+.vscode
+.cursor
+*.swp
+*.swo
+
+# Git & meta
+.git
+.gitignore
+.github
+.claude
+CLAUDE.md
+
+# Logs & cache
+logs
+*.log
+.cache
+.eslintcache
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Lockfile (optional: remove this line to include bun.lock in packed tarball)
+bun.lock
