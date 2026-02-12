@@ -1,6 +1,6 @@
 {
   "name": "@enginnblt/react-native-nitro-contacts",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "react-native-nitro-contacts",
   "main": "lib/index",
   "module": "lib/index",
@@ -53,6 +53,9 @@
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
+  "dependencies": {
+    "react-native-nitro-modules": "^0.33.0"
+  },
   "devDependencies": {
     "@react-native/eslint-config": "0.83.0",
     "@types/react": "^19.1.03",
@@ -66,7 +69,6 @@
   "peerDependencies": {
     "react": "*",
     "react-native": "*",
-    "react-native-nitro-modules": "*",
     "@expo/config-plugins": ">=7.0.0"
   },
   "peerDependenciesMeta": {
