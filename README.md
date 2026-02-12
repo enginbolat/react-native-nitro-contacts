@@ -13,15 +13,26 @@ High-performance React Native contacts library built with **JSI** and [Nitro Mod
 ## Requirements
 
 - React Native **0.74+**
-- [react-native-nitro-modules](https://github.com/mrousavy/nitro) (peer dependency)
+- **Nitro Modules (required)** — This library depends on [react-native-nitro-modules](https://github.com/mrousavy/nitro). You must install and link Nitro Modules in your app; the package will not work without it.
 - iOS 13+ / Android (API 21+)
 
 ## Installation
 
+**Important:** Install `react-native-nitro-modules` in your project first (or together with this package). Without Nitro Modules, this library cannot run.
+
 ```bash
+# Install both packages (Nitro Modules is required)
 bun add react-native-nitro-contacts react-native-nitro-modules
 # or
 npm install react-native-nitro-contacts react-native-nitro-modules
+# or
+yarn add react-native-nitro-contacts react-native-nitro-modules
+```
+
+**iOS:** After installing, run CocoaPods so Nitro (and this library) are linked:
+
+```bash
+cd ios && pod install
 ```
 
 ### Expo (managed workflow)

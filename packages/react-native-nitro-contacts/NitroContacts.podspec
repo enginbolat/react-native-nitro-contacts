@@ -27,5 +27,10 @@ Pod::Spec.new do |s|
 
   s.dependency 'React-jsi'
   s.dependency 'React-callinvoker'
+  s.dependency 'NitroModules'
+
+  load 'nitrogen/generated/ios/NitroContacts+autolinking.rb'
+  add_nitrogen_files(s)
+
   install_modules_dependencies(s)
 end

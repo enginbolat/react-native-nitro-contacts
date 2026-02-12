@@ -2,17 +2,31 @@
 
 High-performance React Native contacts access using [Nitro Modules](https://github.com/mrousavy/nitro) (JSI). Works with both the New Architecture and the legacy bridge. Target: React Native 0.74+.
 
+## Nitro Modules is required
+
+This package **does not work** without [react-native-nitro-modules](https://github.com/mrousavy/nitro). You must install and link Nitro Modules in your app before (or when) using this library. If you only add `react-native-nitro-contacts`, the native module will not load.
+
 ## Installation
 
+1. Install this package **and** `react-native-nitro-modules` (both are required):
+
 ```bash
-npm install @enginnblt/react-native-nitro-contacts
+npm install @enginnblt/react-native-nitro-contacts react-native-nitro-modules
 # or
-yarn add @enginnblt/react-native-nitro-contacts
+yarn add @enginnblt/react-native-nitro-contacts react-native-nitro-modules
 # or
-bun add @enginnblt/react-native-nitro-contacts
+bun add @enginnblt/react-native-nitro-contacts react-native-nitro-modules
 ```
 
-**Peer dependencies:** `react`, `react-native`, and [react-native-nitro-modules](https://github.com/mrousavy/nitro) must be installed.
+2. **iOS:** Run CocoaPods so Nitro and this library are linked:
+
+```bash
+cd ios && pod install
+```
+
+3. **Android:** No extra step; Nitro autolinking applies when you rebuild the app.
+
+**Peer dependencies:** `react`, `react-native`, and `react-native-nitro-modules` must be installed. Without Nitro Modules, the package will not run.
 
 ### Expo (managed workflow)
 
@@ -101,7 +115,8 @@ All of these are exported from `@enginnblt/react-native-nitro-contacts`.
 ## Requirements
 
 - React Native **0.74+**
-- **iOS:** Add `NSContactsUsageDescription` in `Info.plist`.
+- **react-native-nitro-modules** — Must be installed in your project; this library will not work without it. See [Nitro documentation](https://github.com/mrousavy/nitro) for details.
+- **iOS:** Add `NSContactsUsageDescription` in `Info.plist`. After adding packages, run `cd ios && pod install`.
 - **Android:** `READ_CONTACTS` is requested at runtime; ensure it’s not removed from your manifest.
 
 ## Links
