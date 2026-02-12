@@ -36,7 +36,6 @@
         "ios": "^0.0.1",
         "react": "19.2.3",
         "react-native": "0.84.0",
-        "react-native-nitro-modules": "^0.33.9",
         "react-native-safe-area-context": "^5.5.2",
       },
       "devDependencies": {
@@ -62,7 +61,10 @@
     },
     "packages/react-native-nitro-contacts": {
       "name": "@enginnblt/react-native-nitro-contacts",
-      "version": "0.0.3",
+      "version": "0.0.4",
+      "dependencies": {
+        "react-native-nitro-modules": "*",
+      },
       "devDependencies": {
         "@react-native/eslint-config": "0.83.0",
         "@types/react": "^19.1.03",
@@ -77,7 +79,6 @@
         "@expo/config-plugins": "*",
         "react": "*",
         "react-native": "*",
-        "react-native-nitro-modules": "*",
       },
       "optionalPeers": [
         "@expo/config-plugins",
