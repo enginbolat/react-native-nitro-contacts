@@ -3,7 +3,9 @@
     "allow": [
       "WebSearch",
       "WebFetch(domain:nitro.margelo.com)",
-      "WebFetch(domain:github.com)"
+      "WebFetch(domain:github.com)",
+      "Bash(npx react-native config:*)",
+      "Bash(npx expo prebuild:*)"
     ]
   }
 }

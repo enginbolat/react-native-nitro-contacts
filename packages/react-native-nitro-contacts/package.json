@@ -1,13 +1,14 @@
 {
   "name": "@enginnblt/react-native-nitro-contacts",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "react-native-nitro-contacts",
-  "main": "lib/index",
+  "main": "index.js",
   "module": "lib/index",
   "types": "lib/index.d.ts",
   "react-native": "src/index",
   "source": "src/index",
   "files": [
+    "index.js",
     "src",
     "react-native.config.js",
     "lib",
@@ -52,6 +53,9 @@
   "homepage": "https://github.com/enginbolat/react-native-nitro-contacts/blob/main/README.md",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
+  },
+  "expo": {
+    "plugin": "./app.plugin.js"
   },
   "dependencies": {
     "react-native-nitro-modules": "^0.33.0"
