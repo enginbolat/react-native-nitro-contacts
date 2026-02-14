@@ -39,7 +39,19 @@
   },
   "keywords": [
     "react-native",
-    "nitro"
+    "react",
+    "nitro",
+    "nitro-modules",
+    "contacts",
+    "addressbook",
+    "phonebook",
+    "jsi",
+    "c++",
+    "ios",
+    "android",
+    "performance",
+    "fast",
+    "native-module"
   ],
   "repository": {
     "type": "git",
