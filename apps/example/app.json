@@ -30,7 +30,7 @@
     },
     "plugins": [
       [
-        "react-native-nitro-contacts",
+        "@enginnblt/react-native-nitro-contacts",
         {
           "contactsPermissionText": "NitroContacts Example needs access to your contacts."
         }

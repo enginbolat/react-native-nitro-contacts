@@ -10,7 +10,6 @@
   "files": [
     "index.js",
     "src",
-    "scripts",
     "react-native.config.js",
     "lib",
     "nitrogen",
@@ -36,8 +35,7 @@
     "lint-ci": "eslint \"**/*.{js,ts,tsx}\" -f @jamesacarr/github-actions",
     "typescript": "tsc",
     "specs": "tsc --noEmit false && nitrogen --logLevel=\"debug\"",
-    "prepublishOnly": "npm run clean && npm run specs && npm run typescript",
-    "postinstall": "node scripts/inject-nitro-ios.js"
+    "prepublishOnly": "npm run clean && npm run specs && npm run typescript"
   },
   "keywords": [
     "react-native",
@@ -66,15 +64,14 @@
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
     "nitrogen": "*",
+    "react-native-nitro-modules": "*",
     "prettier": "^3.3.3",
     "typescript": "^5.8.3"
-  },
-  "dependencies": {
-    "react-native-nitro-modules": "*"
   },
   "peerDependencies": {
     "react": "*",
     "react-native": "*",
+    "react-native-nitro-modules": "*",
     "@expo/config-plugins": "*"
   },
   "peerDependenciesMeta": {

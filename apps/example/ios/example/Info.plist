@@ -37,6 +37,8 @@
     <string>12.0</string>
     <key>LSRequiresIPhoneOS</key>
     <true/>
+    <key>NSContactsUsageDescription</key>
+    <string>NitroContacts Example needs access to your contacts.</string>
     <key>NSAppTransportSecurity</key>
     <dict>
       <key>NSAllowsArbitraryLoads</key>
@@ -44,8 +46,7 @@
       <key>NSAllowsLocalNetworking</key>
       <true/>
     </dict>
-    <key>NSContactsUsageDescription</key>
-    <string>NitroContacts Example needs access to your contacts.</string>
+
     <key>RCTNewArchEnabled</key>
     <true/>
     <key>UILaunchStoryboardName</key>
